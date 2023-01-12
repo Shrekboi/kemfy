@@ -1,4 +1,13 @@
 /* stylelint-disable selector-list-comma-newline-after */
+* {
+    font-family: 'Biryani', sans-serif;
+}
+
+@font-face {
+    font-family: EntezareZohoor2;
+    src: url(Entezar2.ttf) format("truetype");
+}
+
 
 .blog-header {
     border-bottom: 1px solid #e5e5e5;
@@ -89,12 +98,12 @@ h6 {
 
 
 main {
-    /* background-image: url("./images/banner-bg.png"); */
+    background-image: url("./images/banner-bg.png");
 }
 
 h1 {
     font-size: 3.5rem;
-    font-family: impact;
+    /* font-family: impact; */
 }
 
 .bd-placeholder-img {
