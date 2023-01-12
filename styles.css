@@ -122,9 +122,20 @@ h1 {
 }
 
 .navigointi {
+
+    justify-content: space-between;
+
+    /* justify-content: space-between !important;
+
+    align-items: center; */
+}
+
+.call_section ul {
     display: flex;
+    flex-direction: row;
+}
 
-    justify-content: space-between !important;
+.header_bg {
+    background-color: #e7e7f6;
 
-    align-items: center;
 }
