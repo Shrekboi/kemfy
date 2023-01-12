@@ -1,13 +1,5 @@
 /* stylelint-disable selector-list-comma-newline-after */
-* {
-    font-family: 'Biryani', sans-serif;
-}
-
-@font-face {
-    font-family: EntezareZohoor2;
-    src: url(Entezar2.ttf) format("truetype");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 .blog-header {
     border-bottom: 1px solid #e5e5e5;
@@ -119,4 +111,20 @@ h1 {
 
 .divider1 {
     margin-top: 5rem;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+.footfoot {
+    justify-content: center;
+}
+
+.navigointi {
+    display: flex;
+
+    justify-content: space-between !important;
+
+    align-items: center;
 }
