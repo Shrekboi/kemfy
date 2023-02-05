@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 .blog-header {
-    border-bottom: 1px solid #e5e5e5;
+    /* border-bottom: 1px solid #e5e5e5; */
 }
 
 .blog-header-logo {
@@ -141,13 +141,14 @@ h1 {
 }
 
 .header_bg {
-    background-color: #e7e7f6;
+    /* background-color: #e7e7f6; */
     /* background-color: rgba(242, 233, 231, 255); */
 
 }
 
 .logo img {
     width: 300px;
+    padding: 1rem;
 }
 
 nav {
@@ -159,4 +160,9 @@ nav {
 a {
     color: inherit;
     text-decoration: none !important;
+}
+
+
+.py-5 {
+    padding: 8rem 0rem !important;
 }
