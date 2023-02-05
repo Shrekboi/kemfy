@@ -7,55 +7,63 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../course.css">
+    <script src="../course.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted">Add some information about the album below, the author, or any other
-                            background context. Make it a few sentences long so folks can pick up some informative
-                            tidbits. Then, link them off to some social networking sites or contact information.</p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                            <li><a href="#" class="text-white">Like on Facebook</a></li>
-                            <li><a href="#" class="text-white">Email me</a></li>
-                        </ul>
+        <nav class="navbar navbar-expand-md header_bg">
+            <div class="container-fluid container">
+                <a class="logo" href="index.html"><img
+                        src="../images/kemfy-logo-zip-file/png/logo-no-background.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+
+
+                    <div class="navbar-nav me-auto mb-2 mb-md-0"></div>
+
+                    <div>
+                        <div class="collapse navbar-collapse " id="navbarCollapse">
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Koti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tietoa meistä</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Ota yhteyttä</a>
+                                </li>
+                                <div class="call_section">
+                                    <ul>
+                                        <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                                        <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                                        <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                                        <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                                        <div class="donate_bt"><a href="#"><img src="images/search-icon.png"></a></div>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
-                        viewBox="0 0 24 24">
-                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                        <circle cx="12" cy="13" r="4" />
-                    </svg>
-                    <strong>Album</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </div>
+        </nav>
     </header>
 
-    <div class="container py-4">
+    <div class="container py-4 ">
 
         <main class="container">
+
+
+
+
             <!-- <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
           <div class="col-md-6 px-0">
             <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
@@ -98,31 +106,110 @@
 
             <div class="row g-5  mx-auto col-lg-8">
                 <div class="">
-                    <h3 class="pb-4 mb-4 fst-italic border-bottom">
+
+                    <h3 class="pb-4 mb-4 fst-italic">
 
                     </h3>
 
-                    <article class="blog-post">
-                        <h2 class="blog-post-title mb-1">KE05</h2>
-                        <p class="blog-post-meta">January 1, 2021 by <a href="#">Shrek</a></p>
+                    <div class="container banner-image" style="position: relative;">
+                        <!-- <img src="../images/ke05-banner.png" alt=""> -->
+                        <div style="position: absolute; bottom: 0; left: 0; margin-left: 2rem;">
+                            <h2 class="blog-post-title mb-1">KE05 2023</h2>
+                            <p class="blog-post-meta">Kemiallinen energia ja kiertotalous
+                            </p>
 
-                        <p>This blog post shows a few different types of content that’s supported and styled with
-                            Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as
-                            expected.</p>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <article class="blog-post">
+                        <!-- <h2 class="blog-post-title mb-1">KE05</h2>
+                        <p class="blog-post-meta">Päivitetty: 5.2.2023</p> -->
+
+                        <p class="intro">Tässä moduulissa käsitellään kemiallista energiaa ja energian varastointi- ja
+                            hyödyntämistapoja.
+                            Siinä perehdytään luonnontieteellisen tutkimuksen suunnitteluun sekä tarkastellaan
+                            hapettumis- ja pelkistymisreaktioita ja niiden sovelluksia. Eettisyyden ja
+                            ympäristöosaamisen laaja-alaisten tavoitteiden lisäksi moduulissa korostuvat
+                            vuorovaikutusosaamisen tavoitteet.</p>
                         <hr>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the
-                            available space and show how a longer snippet of text affects the surrounding content. We'll
-                            repeat it often to keep the demonstration flowing, so be on the lookout for this exact same
-                            string of text.</p>
-                        <h2>Blockquotes</h2>
-                        <p>This is an example blockquote in action:</p>
-                        <blockquote class="blockquote">
-                            <p>Quoted text goes here.</p>
-                        </blockquote>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the
-                            available space and show how a longer snippet of text affects the surrounding content. We'll
-                            repeat it often to keep the demonstration flowing, so be on the lookout for this exact same
-                            string of text.</p>
+                        <h2>Tavoitteet</h2>
+                        <p>Moduulin tavoitteena on, että opiskelija:</p>
+                        <ul>
+                            <li> ymmärtää kemiallisen energian varastoinnin ja hyödyntämisen periaatteita ja osaa
+                                perustella mielipiteitään keskustelussa energiaratkaisuista</li>
+                            <li> ymmärtää energian häviämättömyyden ja energianmuutokset kemiallisissa reaktioissa</li>
+                            <li>tuntee merkittävien metallien ominaisuuksia sekä valmistus- ja jalostusprosesseja
+                                ympäristövaikutuksineen</li>
+                            <li>osaa tutkia sähkökemiaan liittyviä ilmiöitä kokeellisesti ja kuvata niitä malleja
+                                käyttäen</li>
+                            <li>tuntee yhteiskunnassa merkittävien metallien kierrätyksen ja kiertotalouden periaatteet
+                                sekä niihin liittyviä ratkaisuja</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h2 class="collapse-item">#1 Reaktiosarjojen ja seosten laskennallinen käsittely</h2>
+
+                        <div class="collapse-content">
+
+                            <br>
+                            <p>Reaktiosarjojen ja seosten laskennallinen käsittely on tärkeä osa kemiallista laskentaa.
+                                Tämä kappale keskittyy reaktioiden ja seosten määrän ja tasapainon matemaattiseen
+                                laskentaan. Lasketun reaktiosarjan nopeus ja seosten koostumus voidaan ennustaa
+                                termodynamiikan ja tilastollisen mekaniikan avulla. Tämä auttaa ymmärtämään reaktioiden
+                                mekanismeja ja tasapainon luonnetta, mikä on tärkeää kemiallisten prosessien
+                                suunnittelussa ja hallinnassa. Tärkeitä käsitteitä ovat reaktiosarjan nopeus, tasapaino,
+                                tilastollinen mekaniikka, termodynamiikka ja seosten koostumuksen ennustaminen.</p>
+
+                            <p>
+                                Tämä kappale tarjoaa perustan reaktiosarjojen ja seosten laskennalliselle käsittelylle,
+                                joka on tärkeä osa kemiallista laskentaa ja kemiallisten prosessien hallintaa. Tämä
+                                lähestymistapa antaa mahdollisuuden ennustaa reaktioiden nopeutta ja seosten
+                                koostumusta, jotta voidaan ymmärtää niiden mekanismeja ja tasapainoa. Laskennallinen
+                                käsittely on tärkeä osa kemian ja teknologian kehitystä, ja se tarjoaa tärkeitä tietoja
+                                kemiallisten prosessien hallinnassa ja suunnittelussa.
+
+                            </p>
+
+                            <p>
+                                Reaktiosarjojen ja seosten laskennallista käsittelyä voidaan soveltaa useilla eri
+                                aloilla, kuten petrokemiassa, farmasiassa, elintarviketeollisuudessa ja
+                                ympäristöteknologiassa. Esimerkiksi petrokemiassa laskennallista käsittelyä voidaan
+                                käyttää reaktiosarjojen nopeuden ennustamiseen ja tehokkuuden parantamiseen, kun taas
+                                farmasiassa voidaan hyödyntää tätä käsittelyä lääkkeiden valmistuksen optimoinnissa ja
+                                tehokkuuden arvioinnissa.
+
+                            </p>
+                        </div>
+
+                        <br>
+
+                        <h2 class="collapse-item">#2 Hapettumis-pelkistymisreaktiot ja sähkökemia</h2>
+
+                        <div class="collapse-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus perferendis
+                                temporibus adipisci porro. Magni dolores nihil voluptas nemo nesciunt earum culpa neque
+                                asperiores beatae eum quidem, nobis voluptatibus alias.</p>
+                        </div>
+
+                        <br>
+
+
+                        <h2 class="collapse-item">#3 Metallien ominaisuudet, valmistus ja kierrätys</h2>
+
+                        <div class="collapse-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus perferendis
+                                temporibus adipisci porro. Magni dolores nihil voluptas nemo nesciunt earum culpa neque
+                                asperiores beatae eum quidem, nobis voluptatibus alias.</p>
+                        </div>
+
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
                         <h3>Example lists</h3>
                         <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
                             other highly repetitive body text used throughout. This is an example unordered list:</p>
@@ -174,37 +261,10 @@
                             </li>
                         </ul>
                         <p>Most of these elements are styled by browsers with few modifications on our part.</p>
-                        <h2>Heading</h2>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the
-                            available space and show how a longer snippet of text affects the surrounding content. We'll
-                            repeat it often to keep the demonstration flowing, so be on the lookout for this exact same
-                            string of text.</p>
-                        <h3>Sub-heading</h3>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the
-                            available space and show how a longer snippet of text affects the surrounding content. We'll
-                            repeat it often to keep the demonstration flowing, so be on the lookout for this exact same
-                            string of text.</p>
-                        <pre><code>Example code block</code></pre>
-                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                            other highly repetitive body text used throughout.</p>
+
                     </article>
 
                     <article class="blog-post">
-                        <h2 class="blog-post-title mb-1">Another blog post</h2>
-                        <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
-
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the
-                            available space and show how a longer snippet of text affects the surrounding content. We'll
-                            repeat it often to keep the demonstration flowing, so be on the lookout for this exact same
-                            string of text.</p>
-                        <blockquote>
-                            <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of
-                                it.</p>
-                        </blockquote>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the
-                            available space and show how a longer snippet of text affects the surrounding content. We'll
-                            repeat it often to keep the demonstration flowing, so be on the lookout for this exact same
-                            string of text.</p>
                         <h3>Example table</h3>
                         <p>And don't forget about tables in these posts:</p>
                         <table class="table">
@@ -244,102 +304,6 @@
                         <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
                             other highly repetitive body text used throughout.</p>
                     </article>
-
-                    <article class="blog-post">
-                        <h2 class="blog-post-title mb-1">New feature</h2>
-                        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
-
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the
-                            available space and show how a longer snippet of text affects the surrounding content. We'll
-                            repeat it often to keep the demonstration flowing, so be on the lookout for this exact same
-                            string of text.</p>
-                        <ul>
-                            <li>First list item</li>
-                            <li>Second list item with a longer description</li>
-                            <li>Third list item to close it out</li>
-                        </ul>
-                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                            other highly repetitive body text used throughout.</p>
-                    </article>
-
-                    <!-- <nav class="blog-pagination" aria-label="Pagination">
-              <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-              <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
-            </nav> -->
-
-
-
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <!-- <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div> -->
-                                <div class="container">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores maxime
-                                        rem quaerat accusamus labore tempora dignissimos reiciendis, dolor molestiae?
-                                        Facere quod, alias voluptatum quae animi ab velit perferendis officiis.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
 
                 <!-- <div class="col-md-4">
@@ -380,8 +344,6 @@
         </div> -->
 
         </main>
-
-
     </div>
 
     <footer class="blog-footer">
