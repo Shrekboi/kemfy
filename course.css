@@ -9,6 +9,8 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+
+
 .blog-header-logo {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif
     /*rtl:Amiri, Georgia, "Times New Roman", serif*/
@@ -111,6 +113,12 @@ p {
 
 }
 
+li {
+  font-size: 19px;
+  line-height: 1.7em;
+  font-family: 'Inter', sans-serif;
+}
+
 .banner-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%), url("./images/ke05-banner.png");
   height: 405px;
@@ -134,3 +142,5 @@ p {
 /* body {
   background-color: rgba(242, 233, 231, 255);
 } */
+
+
