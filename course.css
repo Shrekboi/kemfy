@@ -100,7 +100,7 @@ h2 {
   font-family: "Proxima Nova", sans-serif;
 }
 
-.collapse-content {
+.collapse-contentt {
   max-height: 0;
   overflow: hidden;
   transition: max-height 1s ease-in-out;
@@ -142,5 +142,3 @@ li {
 /* body {
   background-color: rgba(242, 233, 231, 255);
 } */
-
-
