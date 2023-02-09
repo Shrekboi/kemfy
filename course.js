@@ -5,7 +5,7 @@ collapse_menu.forEach(item => {
     item.addEventListener('click', () => {
         item.classList.toggle('active');
         if (item.classList.contains('active')) {
-            item.nextElementSibling.style.maxHeight = '500px';
+            item.nextElementSibling.style.maxHeight = '2000px';
         } else {
             item.nextElementSibling.style.maxHeight = '0';
         }
