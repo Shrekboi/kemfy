@@ -2,37 +2,25 @@
 <html>
 
 <head>
-    <title>Quizlet</title>
-    <style>
-        .question-container {
-            background-color: lightblue;
-            padding: 20px;
-            border-radius: 10px;
-            width: 500px;
-            margin: 20px auto;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="question-container">
-        <h1 id="question">What is the capital of France?</h1>
-        <input type="text" id="answer">
-        <button id="submit-button">Submit</button>
-        <p id="result"></p>
-    </div>
-    <script>
-        const submitButton = document.getElementById("submit-button");
-        const answer = document.getElementById("answer");
-        const result = document.getElementById("result");
-        submitButton.addEventListener("click", function () {
-            if (answer.value.toLowerCase() === "paris") {
-                result.innerHTML = "Correct!";
-            } else {
-                result.innerHTML = "Incorrect. The correct answer is Paris.";
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript">
+        MathJax.Hub.Config({
+            showMathMenu: false,
+            jax: ["input/TeX", "output/SVG"],
+            TeX: {
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
             }
         });
     </script>
+
+</head>
+
+<body>
+    <div class="math">
+        $$
+        2H_{2} + O_{2} \rightarrow 2H_{2}O
+        $$
+    </div>
 </body>
 
 </html>

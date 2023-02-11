@@ -202,3 +202,13 @@ h3 {
   font-family: "Proxima Nova", sans-serif;
   font-weight: 600;
 }
+
+.equation {
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}

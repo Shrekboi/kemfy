@@ -10,7 +10,18 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./course.css">
     <script src="./course.js" defer></script>
-    <!-- <link rel="stylesheet" href="./color-boxes.scss"> -->
+
+    <!-- MATHJAX -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript">
+        MathJax.Hub.Config({
+            showMathMenu: false,
+            jax: ["input/TeX", "output/SVG"],
+            TeX: {
+                extensions: ["AMSmah.js", "AMSsymbols.js"]
+            }
+        });
+    </script>
 
 
 
@@ -209,12 +220,14 @@
                                             </li>
                                         </ol>
 
+                                        <br>
+
 
                                         <h3>Esimerkki 1.</h3>
 
 
 
-                                        <p>
+                                        <p class="equation">
                                             \begin{align}
                                             &\left(1\right)\
                                             Na_2SO_3\left(aq\right)+2HCl\left(aq\right)\rightarrow2NaCl\left(aq\right)+SO_2\left(g\right)+H_2O
@@ -392,8 +405,8 @@
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
 
 
 </body>
