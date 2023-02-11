@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./course.css">
     <script src="./course.js" defer></script>
+    <!-- <link rel="stylesheet" href="./color-boxes.scss"> -->
+
+
+
 </head>
 
 <body>
@@ -167,181 +171,274 @@
 
                         <hr>
 
-                        <h2 class="collapse-item">#1 Reaktiosarjojen ja seosten laskennallinen käsittely</h2>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne">
+                                        <h2>#1 Reaktiosarjojen ja seosten laskennallinen käsittely</h2>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse">
+                                    <div>
+                                        <br>
+                                        <p> <strong>Reaktiosarja</strong> on monesta reaktiosta muodustuva perättäisten
+                                            reaktioiden
+                                            sarja. Tästä muodostetaan <strong>kokonaisreaktion reaktioyhtälö</strong> on
+                                            reaktioyhtälö jossa on yhdistetty muut reaktiot.</p>
 
-                        <div class="collapse-contentt">
+                                        <h3>Yleiset ohjeet kokonaisreaktioiden reaktioyhtälön laatimiseksi</h3>
 
-                            <br>
-                            <p> <strong>Reaktiosarja</strong> on monesta reaktiosta muodustuva perättäisten reaktioiden
-                                sarja. Tästä muodostetaan <strong>kokonaisreaktion reaktioyhtälö</strong> on
-                                reaktioyhtälö jossa on yhdistetty muut reaktiot.</p>
-
-                            <h3>Yleiset ohjeet kokonaisreaktioiden reaktioyhtälön laatimiseksi</h3>
-
-                            <ol>
-                                <li>
-                                    Tasapainota jokainen reaktioyhtälö erikseen
-                                </li>
-                                <li>
-                                    Pyri saamaan reaktiokertoimet siten, että voisit supistaa ensimmäisen reaktioyhtälön
-                                    tuoteen, joka on seuraavassa reaktioyhtälössä lähtöaineena.
-                                </li>
-                                <li>
-                                    Laske yhteen reaktioyhtälöiden vasen ja oikea puoli yhteen.
-                                </li>
-                                <li>
-                                    Tarkista, että reaktiokertoimet ovat pienimmän mahdolliset kokonaisluvut
-                                </li>
-                            </ol>
+                                        <br>
+                                        <ol class="space-appart">
+                                            <li class="red-box">
+                                                Tasapainota jokainen reaktioyhtälö erikseen, eli varmista, että
+                                                molemilla reaktion
+                                                puolilla on sama määrä aineita
+                                            </li>
+                                            <li class="blue-box">
+                                                Pyri saamaan reaktiokertoimet siten, että voisit supistaa ensimmäisen
+                                                reaktioyhtälön
+                                                tuoteen, joka on seuraavassa reaktioyhtälössä lähtöaineena.
+                                            </li>
+                                            <li class="green-box">
+                                                Laske yhteen reaktioyhtälöiden vasen ja oikea puoli yhteen.
+                                            </li>
+                                            <li class="yellow-box">
+                                                Tarkista, että reaktiokertoimet ovat pienimmän mahdolliset kokonaisluvut
+                                            </li>
+                                        </ol>
 
 
-                            <h3>Esimerkki</h3>
-
-                            <p>
-                                1) 5Na2SO3(aq) + 10HCl(aq) → 10NaCl(aq) + 5SO2(g) + 5H2O(l)
-                                (2) 5SO2(g) + 10OH–(aq) → 5H2O(l) + 5SO2−3(aq)
-                                (3) 5SO2−3(aq) + 6H+(aq) + 2MnO−4(aq) → 5SO2−4 (aq)+ 2Mn2+(aq) + 3H2O(l).
-                            </p>
+                                        <h3>Esimerkki 1.</h3>
 
 
-                            <h4>Lisämateriaalit</h4>
 
-                            <br>
+                                        <p>
+                                            \begin{align}
+                                            &\left(1\right)\
+                                            Na_2SO_3\left(aq\right)+2HCl\left(aq\right)\rightarrow2NaCl\left(aq\right)+SO_2\left(g\right)+H_2O
+                                            \\
+                                            &\left(2\right)SO_2\left(g\right)+2OH^-\left(aq\right)\rightarrow
+                                            H_2O\left(l\right)+SO_3^{2-}\left(aq\right) \\
+                                            &\left(3\right)5SO_3^{2-}\left(aq\right)+6H⁺\left(aq\right)+MnO⁻_4\left(aq\right)\rightarrow5SO_4^{2-}\left(aq\right)+2Mn^{2+}\left(aq\right)+3H_2O\left(l\right)
+                                            \end{align}
+                                        </p>
 
-                            <ul>
-                                <li>
-                                    <a
-                                        href="https://www.youtube.com/watch?v=1niedVQkNVI">https://www.youtube.com/watch?v=1niedVQkNVI</a>
-                                </li>
 
-                                <a href=""></a>
-                                <a href=""></a>
-                            </ul>
 
+
+                                        <h4>Lisämateriaalit</h4>
+
+                                        <br>
+
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="https://www.youtube.com/watch?v=1niedVQkNVI">https://www.youtube.com/watch?v=1niedVQkNVI</a>
+                                            </li>
+
+                                            <a href=""></a>
+                                            <a href=""></a>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+
+
+                                <hr>
+
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo">
+                                        <h2>#2 Hapettumis-pelkistymisreaktiot
+                                            ja sähkökemia</h2>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse">
+                                    <div>
+                                        bruh
+                                    </div>
+
+
+                                </div>
+
+                                <hr>
+
+
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree">
+                                        <h2>#3 Metallien ominaisuudet, valmistus ja kierrätys</h2>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse">
+                                    <div>
+                                        bruh
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
 
                         </div>
 
-                        <br>
-
-                        <h2 class="collapse-item">#2 Hapettumis-pelkistymisreaktiot ja sähkökemia</h2>
-
-                        <div class="collapse-contentt">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus perferendis
-                                temporibus adipisci porro. Magni dolores nihil voluptas nemo nesciunt earum culpa neque
-                                asperiores beatae eum quidem, nobis voluptatibus alias.</p>
-                        </div>
-
-                        <br>
 
 
-                        <h2 class="collapse-item">#3 Metallien ominaisuudet, valmistus ja kierrätys</h2>
-
-                        <div class="collapse-contentt">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus perferendis
-                                temporibus adipisci porro. Magni dolores nihil voluptas nemo nesciunt earum culpa neque
-                                asperiores beatae eum quidem, nobis voluptatibus alias.</p>
-                        </div>
-
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <!-- <h2 class="collapse-item">#1 Reaktiosarjojen ja seosten laskennallinen käsittely</h2>
 
 
-                        <h3>Example lists</h3>
-                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                            other highly repetitive body text used throughout. This is an example unordered list:</p>
-                        <ul>
-                            <li>First list item</li>
-                            <li>Second list item with a longer description</li>
-                            <li>Third list item to close it out</li>
-                        </ul>
-                        <p>And this is an ordered list:</p>
-                        <ol>
-                            <li>First list item</li>
-                            <li>Second list item with a longer description</li>
-                            <li>Third list item to close it out</li>
-                        </ol>
-                        <p>And this is a definition list:</p>
-                        <dl>
-                            <dt>HyperText Markup Language (HTML)</dt>
-                            <dd>The language used to describe and define the content of a Web page</dd>
-                            <dt>Cascading Style Sheets (CSS)</dt>
-                            <dd>Used to describe the appearance of Web content</dd>
-                            <dt>JavaScript (JS)</dt>
-                            <dd>The programming language used to build advanced Web sites and applications</dd>
-                        </dl>
-                        <h2>Inline HTML elements</h2>
-                        <p>HTML defines a long list of available inline tags, a complete list of which can be found on
-                            the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer
-                                Network</a>.</p>
-                        <ul>
-                            <li><strong>To bold text</strong>, use <code
-                                    class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-                            <li><em>To italicize text</em>, use <code
-                                    class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-                            <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code
-                                    class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional
-                                <code class="language-plaintext highlighter-rouge">title</code> attribute for the full
-                                phrase.
-                            </li>
-                            <li>Citations, like <cite>— Mark Otto</cite>, should use <code
-                                    class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-                            <li><del>Deleted</del> text should use <code
-                                    class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and
-                                <ins>inserted</ins> text should use <code
-                                    class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.
-                            </li>
-                            <li>Superscript <sup>text</sup> uses <code
-                                    class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript
-                                <sub>text</sub> uses <code
-                                    class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.
-                            </li>
-                        </ul>
-                        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                        <div class="collapse-contentt"> -->
 
-                    </article>
 
-                    <article class="blog-post">
-                        <h3>Example table</h3>
-                        <p>And don't forget about tables in these posts:</p>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Upvotes</th>
-                                    <th>Downvotes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Alice</td>
-                                    <td>10</td>
-                                    <td>11</td>
-                                </tr>
-                                <tr>
-                                    <td>Bob</td>
-                                    <td>4</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Charlie</td>
-                                    <td>7</td>
-                                    <td>9</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td>Totals</td>
-                                    <td>21</td>
-                                    <td>23</td>
-                                </tr>
-                            </tfoot>
-                        </table>
 
-                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                            other highly repetitive body text used throughout.</p>
-                    </article>
                 </div>
 
-                <!-- <div class="col-md-4">
+                <br>
+                <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+                <!-- <h2 class="collapse-item">#3 Metallien ominaisuudet, valmistus ja kierrätys</h2>
+
+                <div class="collapse-contentt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus perferendis
+                        temporibus adipisci porro. Magni dolores nihil voluptas nemo nesciunt earum culpa neque
+                        asperiores beatae eum quidem, nobis voluptatibus alias.</p>
+                </div> -->
+
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                <br>
+                <h3>Example lists</h3>
+                <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
+                    other highly repetitive body text used throughout. This is an example unordered list:</p>
+                <ul>
+                    <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+                </ul>
+                <p>And this is an ordered list:</p>
+                <ol>
+                    <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+                </ol>
+                <p>And this is a definition list:</p>
+                <dl>
+                    <dt>HyperText Markup Language (HTML)</dt>
+                    <dd>The language used to describe and define the content of a Web page</dd>
+                    <dt>Cascading Style Sheets (CSS)</dt>
+                    <dd>Used to describe the appearance of Web content</dd>
+                    <dt>JavaScript (JS)</dt>
+                    <dd>The programming language used to build advanced Web sites and applications</dd>
+                </dl>
+                <h2>Inline HTML elements</h2>
+                <p>HTML defines a long list of available inline tags, a complete list of which can be found on
+                    the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer
+                        Network</a>.</p>
+                <ul>
+                    <li><strong>To bold text</strong>, use <code
+                            class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                    <li><em>To italicize text</em>, use <code
+                            class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                    <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code
+                            class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional
+                        <code class="language-plaintext highlighter-rouge">title</code> attribute for the full
+                        phrase.
+                    </li>
+                    <li>Citations, like <cite>— Mark Otto</cite>, should use <code
+                            class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                    <li><del>Deleted</del> text should use <code
+                            class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and
+                        <ins>inserted</ins> text should use <code
+                            class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.
+                    </li>
+                    <li>Superscript <sup>text</sup> uses <code
+                            class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript
+                        <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.
+                    </li>
+                </ul>
+                <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+
+                </article>
+
+
+                <div class="card">
+                    <h1>Coronavirus - Facts, advice and measures</h1>
+
+                    <details class="warning">
+                        <summary>Facts and knowledge about COVID-19</summary>
+                        <p>Some text to be hidden.</p>
+                        <p>Some text to be hidden.</p>
+                        <p>Some text to be hidden.</p>
+                        <p>Some text to be hidden.</p>
+                    </details>
+
+                    <details class="info" open>
+                        <summary>For the public</summary>
+                        <p>Social distance, quarantine and isolation</p>
+                        <p>Hand hygiene, cough etiquette, cleaning and laundry</p>
+                        <p>When children have acute respiratory tract infections</p>
+                        <p>Risk groups and their relatives</p>
+                    </details>
+
+                    <details class="alert">
+                        <summary>Facts and knowledge about COVID-19</summary>
+                        <p>Some text to be hidden.</p>
+                        <p>Some text to be hidden.</p>
+                        <p>Some text to be hidden.</p>
+                        <p>Some text to be hidden.</p>
+                    </details>
+                </div>
+
+                <article class="blog-post">
+                    <h3>Example table</h3>
+                    <p>And don't forget about tables in these posts:</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Upvotes</th>
+                                <th>Downvotes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alice</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>Bob</td>
+                                <td>4</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Charlie</td>
+                                <td>7</td>
+                                <td>9</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Totals</td>
+                                <td>21</td>
+                                <td>23</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
+                        other highly repetitive body text used throughout.</p>
+                </article>
+            </div>
+
+            <!-- <div class="col-md-4">
             <div class="position-sticky" style="top: 2rem;">
               <div class="p-4 mb-3 bg-light rounded">
                 <h4 class="fst-italic">About</h4>
@@ -457,6 +554,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript">
+        MathJax = {
+            showMathMenu: false
+        };
+    </script> -->
+
+    <!-- 
+
+
 
 
 </body>

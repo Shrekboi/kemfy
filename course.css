@@ -142,3 +142,63 @@ li {
 /* body {
   background-color: rgba(242, 233, 231, 255);
 } */
+
+
+.red-box {
+  background: #FFF0F3;
+  border-color: #FFB3C0;
+  border-style: solid;
+  border-width: 0px 0px 0px 15px;
+  /* color: #ffffff; */
+  border-radius: 5px;
+
+  padding: 15px;
+
+}
+
+.blue-box {
+  background: #FAFAFF;
+  border-color: #B4B3FF;
+  border-style: solid;
+  border-width: 0px 0px 0px 15px;
+  /* color: #ffffff; */
+  border-radius: 5px;
+
+  padding: 15px;
+
+}
+
+.yellow-box {
+  background: #FFF6EE;
+  border-color: #FFC48B;
+  border-style: solid;
+  border-width: 0px 0px 0px 15px;
+  /* color: #ffffff; */
+  border-radius: 5px;
+
+  padding: 15px;
+
+}
+
+.green-box {
+  background: #F2FFFF;
+  border-color: #B3E5CC;
+  border-style: solid;
+  border-width: 0px 0px 0px 15px;
+  /* color: #ffffff; */
+  border-radius: 5px;
+
+  padding: 15px;
+
+}
+
+.space-appart {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h3 {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+}
