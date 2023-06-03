@@ -203,3 +203,16 @@ ol {
   list-style-type: none;
   padding-left: 0;
 }
+
+
+.MathJax_Display,
+.MJXc-display,
+.MathJax_SVG_Display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.post-content p {
+  max-width: 100%;
+  overflow-x: auto;
+}
