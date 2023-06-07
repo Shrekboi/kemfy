@@ -7,57 +7,81 @@
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="styles.css"> -->
-  <link rel="stylesheet" href="course.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./course.css">
+  <script src="./course.js" defer></script>
+
+  <!-- MATHJAX -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript">
+    MathJax.Hub.Config({
+      showMathMenu: false,
+      jax: ["input/TeX", "output/SVG"],
+      TeX: {
+        extensions: ["AMSmah.js", "AMSsymbols.js"]
+      }
+    });
+
+
+  </script>
 </head>
 
 <body>
-
-    <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">About</h4>
-                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-              </div>
-              <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Contact</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                  <li><a href="#" class="text-white">Like on Facebook</a></li>
-                  <li><a href="#" class="text-white">Email me</a></li>
-                </ul>
-              </div>
+  <header>
+    <nav class="navbar navbar-expand-md header_bg">
+      <div class="container-fluid container">
+        <a class="logo" href="./index.html"><img src="./images/kemfy-logo-zip-file/png/logo-no-background.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+          <div class="navbar-nav me-auto mb-2 mb-md-0"></div>
+          <div>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Koti</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tietoa meistä</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Ota yhteyttä</a>
+                </li>
+                <div class="call_section">
+                  <ul>
+                    <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                    <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                    <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                    <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                    <div class="donate_bt"><a href="#"><img src="images/search-icon.png"></a></div>
+                  </ul>
+                </div>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-          <div class="container">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-              <strong>Album</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
-      </header>
+      </div>
+    </nav>
+  </header>
 
-    <div class="container py-4">
-      
-      <main class="container">
-        <!-- <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
-          <div class="col-md-6 px-0">
-            <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-            <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-            <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
-          </div>
-        </div> -->
-    
-      
-        <!-- <div class="row mb-2">
+  <div class="banner-image"
+    style="position: relative; background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%), url('./images/ke012-banner.png');">
+
+    <!-- <img src="../images/ke05-banner.png" alt=""> -->
+    <div style="position: absolute; bottom: 0; left: 0; margin: 6rem;">
+      <h2 class="blog-post-title mb-1">KE01-02 2023</h2>
+      <p class="blog-post-meta">Ihmisen ja elinympäristön kemia</p>
+    </div>
+
+  </div>
+  <div class="container py-4 background">
+    <main class="container">
+
+
+
+      <!-- <div class="row mb-2">
           <div class="col-md-6">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div class="col p-4 d-flex flex-column position-static">
@@ -87,247 +111,276 @@
             </div>
           </div>
         </div> -->
-      
-        <div class="row g-5  mx-auto col-lg-8">
-          <div class="">
-            <h3 class="pb-4 mb-4 fst-italic border-bottom">
-              
-            </h3>
-      
-            <article class="blog-post">
-              <h2 class="blog-post-title mb-1">KE01</h2>
-              <p class="blog-post-meta">January 1, 2021 by <a href="#">Shrek</a></p>
-      
-              <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-              <hr>
-              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-              <h2>Blockquotes</h2>
-              <p>This is an example blockquote in action:</p>
-              <blockquote class="blockquote">
-                <p>Quoted text goes here.</p>
-              </blockquote>
-              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-              <h3>Example lists</h3>
-              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
-              <ul>
-                <li>First list item</li>
-                <li>Second list item with a longer description</li>
-                <li>Third list item to close it out</li>
-              </ul>
-              <p>And this is an ordered list:</p>
-              <ol>
-                <li>First list item</li>
-                <li>Second list item with a longer description</li>
-                <li>Third list item to close it out</li>
-              </ol>
-              <p>And this is a definition list:</p>
-              <dl>
-                <dt>HyperText Markup Language (HTML)</dt>
-                <dd>The language used to describe and define the content of a Web page</dd>
-                <dt>Cascading Style Sheets (CSS)</dt>
-                <dd>Used to describe the appearance of Web content</dd>
-                <dt>JavaScript (JS)</dt>
-                <dd>The programming language used to build advanced Web sites and applications</dd>
-              </dl>
-              <h2>Inline HTML elements</h2>
-              <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-              <ul>
-                <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-                <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-                <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
-                <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-                <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-                <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
-              </ul>
-              <p>Most of these elements are styled by browsers with few modifications on our part.</p>
-              <h2>Heading</h2>
-              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-              <h3>Sub-heading</h3>
-              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-              <pre><code>Example code block</code></pre>
-              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-            </article>
-      
-            <article class="blog-post">
-              <h2 class="blog-post-title mb-1">Another blog post</h2>
-              <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
-      
-              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-              <blockquote>
-                <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
-              </blockquote>
-              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-              <h3>Example table</h3>
-              <p>And don't forget about tables in these posts:</p>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Upvotes</th>
-                    <th>Downvotes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Alice</td>
-                    <td>10</td>
-                    <td>11</td>
-                  </tr>
-                  <tr>
-                    <td>Bob</td>
-                    <td>4</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>Charlie</td>
-                    <td>7</td>
-                    <td>9</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td>Totals</td>
-                    <td>21</td>
-                    <td>23</td>
-                  </tr>
-                </tfoot>
-              </table>
-      
-              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-            </article>
-      
-            <article class="blog-post">
-              <h2 class="blog-post-title mb-1">New feature</h2>
-              <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
-      
-              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-              <ul>
-                <li>First list item</li>
-                <li>Second list item with a longer description</li>
-                <li>Third list item to close it out</li>
-              </ul>
-              <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-            </article>
-      
-            <!-- <nav class="blog-pagination" aria-label="Pagination">
-              <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-              <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
-            </nav> -->
 
+      <div class="row g-5  mx-auto col-lg-8">
+        <div class="">
 
+          <!-- <h3 class="pb-4 mb-4 fst-italic">
 
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <!-- <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </h3> -->
+
+          <!-- <div class="container banner-image" style="position: relative;">                        <div style="position: absolute; bottom: 0; left: 0; margin-left: 2rem;">
+                            <h2 class="blog-post-title mb-1">KE05 2023</h2>
+                            <p class="blog-post-meta">Kemiallinen energia ja kiertotalous
+                            </p>
+
+                        </div>
+
                     </div> -->
-                    <div class="container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores maxime rem quaerat accusamus labore tempora dignissimos reiciendis, dolor molestiae? Facere quod, alias voluptatum quae animi ab velit perferendis officiis.</p>
-                    </div>
+
+          <br>
+
+          <article class="blog-post">
+            <!-- <h2 class="blog-post-title mb-1">KE05</h2>
+                        <p class="blog-post-meta">Päivitetty: 5.2.2023</p> -->
+
+            <p class="intro">Tässä moduulissa tutustut erilaisiin kemiallisiin aineisiin, kuten alkuaineisiin,
+              yhdisteisiin ja seoksiin. Opit ymmärtämään atomien rakennetta ja niiden vuorovaikutuksia toistensa kanssa.
+              Opit myös molekyylien ominaisuuksia ja niiden vaikutusta aineiden käyttäytymiseen erilaisissa
+              olosuhteissa.</p>
+            <hr>
+            <h2>Tavoitteet</h2>
+            <p>Moduulin tavoitteena on, että opiskelija:</p>
+            <ul>
+              <li>oppii kemian perusteet</li>
+              <li>osaa laskea ainemäärä laskuja</li>
+              <li>oppii käyttämään jaksollista järjestelmää</li>
+            </ul>
+
+            <hr>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne">
+                    <h2>#1 Aineet</h2>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse">
+                  <div>
+                    Aineet voidaan luokitella paitsi olomuodon, myös kemiallisen koostumuksen perusteella. Puhtaita
+                    aineita ovat kaikki alkuaineet ja erilaiset yhdisteet. Alkuaine koostuu sellaisista atomeista,
+                    joiden ytimissä on sama määrä protoneja. Yhdiste sen sijaan koostuu kahdesta tai useammasta eri
+                    alkuaineesta, jotka ovat reagoineet keskenään kemiallisissa reaktioissa.
+
+
+
+
+                  </div>
+
+                  <div>
+                    Aineen olomuodot ovat kiinteä, neste ja kaasu. Kiinteässä olomuodossta aineen rakenne on hyvin
+                    tiivis.
+
+                  </div>
+
+                  <div>vety, typpi, happi, fluori, kloori, bromi ja jodi isiintyvät kaksiatomisina.</div>
+
+                  <div>Jotkut alkuaineet esiintyvät luonnossa eri tavoilla. Tämä ilmiö on nimletään allotropia.
+                    Esimerkiksi happi esintyy O_2 ja O_3 molekyyleinä.</div>
+
+
+                  <div>
+
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
+
+
+
+
+                <hr>
+
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo">
+                    <h2>#2 Pitoisuus ja seosten erotus</h2>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse">
+                  <div>
+                    Pitoisuus kertoo jonkin aineen suhtelliseen osuuden liuoksessa. Pitoisuutta ilmaistaan eri tavoin,
+                    kuten massaprosenttisuus, tilavuusprosenttisuus, promille, ppm ja ppb.
+
+
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
+
+                  <div>
+                    Massaprosenttisuus (m-%) ilmaisee aineen massan osuutta koko seoksen massasta.
+
+                    esim. .... (kuva siitä)
+
                   </div>
+
+                  <div>
+                    Tilavuusprosentti lasketaan samalla tavalla.
+
+                    esim kuva ...
+                  </div>
+
+                  <div>
+                    Prosentti tarkoittaa sadasosaa. Promille tarkoittaa tuhannesosaa. Pienempiä pitoisuuksia voidaan
+                    ilmaista miljoonasosina (ppm "parts per million") tai miljardiosina (ppb "parts per billion")
+
+                    taulukko 2.2 kappaleesta (studeo)
+                  </div>
+
+
+
                 </div>
+
+                <hr>
+
+
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree">
+                    <h2>#3 Metallien ominaisuudet, valmistus ja kierrätys</h2>
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse">
+                  <div>
+                    <img src="./images/jose.jpg" alt="">
+                  </div>
+
+
+                </div>
+
+                <hr>
+
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour">
+                    <h2>#4 Kemiallisen reaktion energiamuutokset</h2>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse">
+                  <div>
+                    <img src="./images/rodrigo.jpg" alt="">
+                  </div>
+
+
+                </div>
+
+
+
               </div>
 
-
-
-    
-                
-
-
-
-
-
-
-      
-          </div>
-      
-          <!-- <div class="col-md-4">
-            <div class="position-sticky" style="top: 2rem;">
-              <div class="p-4 mb-3 bg-light rounded">
-                <h4 class="fst-italic">About</h4>
-                <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
-              </div>
-      
-              <div class="p-4">
-                <h4 class="fst-italic">Archives</h4>
-                <ol class="list-unstyled mb-0">
-                  <li><a href="#">March 2021</a></li>
-                  <li><a href="#">February 2021</a></li>
-                  <li><a href="#">January 2021</a></li>
-                  <li><a href="#">December 2020</a></li>
-                  <li><a href="#">November 2020</a></li>
-                  <li><a href="#">October 2020</a></li>
-                  <li><a href="#">September 2020</a></li>
-                  <li><a href="#">August 2020</a></li>
-                  <li><a href="#">July 2020</a></li>
-                  <li><a href="#">June 2020</a></li>
-                  <li><a href="#">May 2020</a></li>
-                  <li><a href="#">April 2020</a></li>
-                </ol>
-              </div>
-      
-              <div class="p-4">
-                <h4 class="fst-italic">Elsewhere</h4>
-                <ol class="list-unstyled">
-                  <li><a href="#">GitHub</a></li>
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">Facebook</a></li>
-                </ol>
-              </div>
             </div>
-          </div>
-        </div> -->
-      
-      </main>
 
 
-    </div>
 
-  <footer class="blog-footer">
-    <p>Footer <a href="https://getbootstrap.com/">Link</a> by <a
-        href="https://twitter.com/mdo">@shrek</a>.</p>
-    <p>
-      <a href="#">Back to top</a>
-    </p>
+
+
+
+            <!-- <h2 class="collapse-item">#1 Reaktiosarjojen ja seosten laskennallinen käsittely</h2>
+
+
+                        <div class="collapse-contentt"> -->
+
+
+
+        </div>
+
+
+
+
+
+
+        <!-- <h2 class="collapse-item">#3 Metallien ominaisuudet, valmistus ja kierrätys</h2>
+
+                <div class="collapse-contentt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus perferendis
+                        temporibus adipisci porro. Magni dolores nihil voluptas nemo nesciunt earum culpa neque
+                        asperiores beatae eum quidem, nobis voluptatibus alias.</p>
+                </div> -->
+
+
+
+    </main>
+  </div>
+
+  <div class="container">
+    <footer class="pt-5">
+      <div class="row footfoot">
+        <div class="col-6 col-md-2 mb-3">
+          <!-- <h5>Section</h5> -->
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kotisivu</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tietoa meistä</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ota yhteyttä</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kysymykset</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <!-- <h5>Section</h5> -->
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">KE01-2</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">KE03</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">KE04</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">KE05</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">KE06</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div> -->
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Ota yhteyttä</h5>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <input id="newsletter1" type="text" class="form-control" placeholder="Nimi">
+              <input id="newsletter1" type="email" class="form-control" placeholder="Sähköposti">
+
+            </div>
+            <textarea type="text" class="form-control" id="g-msg" placeholder='Teksti...'></textarea>
+            <button class="btn btn-primary" type="button">Lähetä</button>
+
+          </form>
+        </div>
+      </div>
+
+      <div class=" d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+        <p>&copy; 2023 Kemfy, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg></a></li>
+        </ul>
+      </div>
     </footer>
+  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
 
 
 </body>
