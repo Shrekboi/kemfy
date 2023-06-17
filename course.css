@@ -216,3 +216,11 @@ ol {
   max-width: 100%;
   overflow-x: auto;
 }
+
+
+.content-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+}
